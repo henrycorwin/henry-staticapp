@@ -1,0 +1,22 @@
+{% extends '_templates/base.njk' %}
+
+{% block content %}
+<article class="container">
+  <h1>Ships of the Golden Age of pirates</h1>
+  <p>The best Lorem Ipsum Generator in all the sea! Heave this scurvy copyfiller fer yar next adventure and cajol yar clients into walking the plank with ev'ry layout! Configure above, then get yer pirate ipsum...own the high seas, arg!</p>
+  <div class="row">
+    {% for ship in pirates.ships %}
+    <div class="col-sm-6 col-lg-4">
+      <div class="card" class="card mb-4">
+        <div class="card-body text-success">
+          <h5 class="card-title text-primary">{{ ship.ship_name }}</h5>
+          <h6 class="captain-title">{{ship.captain}}</h6>
+          <p class="card-text">{{ ship.blurb }}</p>
+          <a href="{{ ship.source }}" target="_blank" class="text-muted">Source</a>
+        </div>
+      </div>
+    </div>
+   {% endfor %}
+  </div>
+</article>
+{% endblock %}
