@@ -9,8 +9,12 @@
       "fileId": "1gDwO-32cgpBDn_0niV0iu6TqQTaRDr4nmSqnT53magY",
       "type": "sheet",
       "name": "bookstores"
-    }
-    ,
+    },
+    {
+      "fileId": "140qsA_FrnGZuOWi_VS1yksiMguPU6BxGLTg0Ufub3wU",
+      "type": "doc",
+      "name": "blog"
+    },
     {
       "fileId": "1G-aJA1H5C-B05Hlpx2RiojYcsNNXQ5ntvUEArRZ5O6w",
       "type": "sheet",
@@ -24,6 +28,13 @@
       "array": "books",
       "slug": "slug",
       "path": "books"
+    },
+    {
+      "template": "bake-blog",
+      "data": "blog",
+      "array": "blogs",
+      "slug": "slug",
+      "path": "blog"
     }
   ]
 }
